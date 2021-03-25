@@ -1,0 +1,25 @@
+* {
+  font-family: monospace;
+}
+
+@media (min-width: 425px) and (max-width: 1440px) {
+  body {
+    text-align: center;
+    font-size: 40px;
+    top: 50%;
+    left: 50%;
+  }
+  button {
+    border: 3px solid #58355E;
+    color: black;
+    background-color: white;
+    font-size: 20px;
+  }
+  button:hover {
+    background-color: #58355E;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    color: white;
+  }
+}
+/*# sourceMappingURL=style.css.map */

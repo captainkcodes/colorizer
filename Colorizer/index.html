@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title> Colorizer </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="bg"></div>
+
+    <p id="textColor">Don't like the background color? Change it! </p>
+    <p id="textColor">The text color changes as well!</p>
+    <button onclick="makeColorHex()">Change Background</button>
+    <button onclick="changeTextColor()">Change Text Color</button>
+</body>
+
+<script>
+    //makes a hex color code
+    function makeColorHex()
+    {
+        var makeHex = '0123456789ABCDEF';
+        var code = '#'; //so it will be a valid hex code
+
+        for (var count = 0; count < 6; count++)
+        {
+            code += makeHex[Math.floor(Math.random() * 16)];
+        }
+        console.log(code);
+        document.body.style.backgroundColor = code;
+    }
+
+    //changes text color to a random one
+    function changeTextColor()
+    {
+        var makeHex = '0123456789ABCDEF';
+        var code = '#'; //so it will be a valid hex code
+
+        for (var count = 0; count < 6; count++)
+        {
+            code += makeHex[Math.floor(Math.random() * 16)];
+        }
+        console.log(code);
+        document.body.style.color = code;
+    }
+
+</script>
+
+</html>

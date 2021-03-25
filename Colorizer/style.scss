@@ -1,0 +1,30 @@
+*{
+    font-family: monospace;
+}
+
+$phone-width : 425px;
+$desktop-width : 1440px;
+
+@media (min-width: #{$phone-width}) and (max-width: #{$desktop-width}) {
+
+    body {
+        text-align: center;
+        font-size: 40px;
+        top: 50%;
+        left: 50%;
+    }
+    
+    $btncolor : #58355E;
+    
+    button {
+        border: 3px solid $btncolor;
+        color: black;
+        background-color: white;
+        font-size: 20px;
+        &:hover {
+            background-color: $btncolor;
+            transition: all 0.3s ease-in-out;
+            color: white;
+        }
+    }
+}
